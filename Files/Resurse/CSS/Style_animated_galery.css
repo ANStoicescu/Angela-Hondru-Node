@@ -1,0 +1,38 @@
+@charset "utf-8";
+#animated-galery {
+    padding: 0.4em;
+}
+#moving {
+    display: flex;
+    position: absolute;
+    animation-name: go;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+#moving > * {
+    flex-shrink: 0;
+    position: relative;
+}
+#animation_container {
+    height: 100%;
+    width: auto;
+}
+@keyframes go {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -300%;
+    }
+}
+#animation_container {
+    margin: auto;
+    top: -30px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 240px;
+    box-sizing: content-box;
+}

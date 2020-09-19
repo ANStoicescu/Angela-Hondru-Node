@@ -1,0 +1,11 @@
+{"lastId":11,"carti":[
+{"id":1,"nume":"Curs de limba japoneză","an":"1983","nr_pagini":254,"pret":34,"disponibil":false},
+{"id":2,"nume":"111 Dialoguri situaţionale","an":"1991","nr_pagini":224,"pret":35,"disponibil":true},
+{"id":3,"nume":"Curs de limba japoneză, vol. II","an":"1992","nr_pagini":204,"pret":40,"disponibil":true},
+{"id":4,"nume":"Festivaluri japoneze – Īn spiritul tradiţiei","an":"2001","nr_pagini":254,"pret":"26","disponibil":false},
+{"id":5,"nume":"Ghid de conversaţie român-japonez","an":"2002","nr_pagini":154,"pret":54,"disponibil":false},
+{"id":6,"nume":"Curs practic de limba japoneză","an":"2002","nr_pagini":282,"pret":10,"disponibil":true},
+{"id":7,"nume":"Ghid de conversaţie japonez-român","an":"2004","nr_pagini":173,"pret":32,"disponibil":true},
+{"id":8,"nume":"Limbă şi civilizaţie japoneză","an":"2005","nr_pagini":224,"pret":21,"disponibil":true},
+{"id":9,"nume":"Scrisoare către Japonia","an":"2011","nr_pagini":354,"pret":33,"disponibil":false},
+{"id":10,"nume":"Kagura – de la mit la realitate prin dans","an":"2014","nr_pagini":204,"pret":34,"disponibil":true}]}

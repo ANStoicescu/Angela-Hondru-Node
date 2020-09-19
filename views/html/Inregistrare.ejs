@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Stoicescu Adrian">
+        <meta name="description" content="Site Angela Hondru">
+        <meta name="keywords" content="Angela, Hondru, Japonia, Centrul de Studii Romano-Japoneze,Centru, Studii, Romano-Japoneze">
+        <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style.css"/>
+        <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_animated_galery.css"/>
+        <script src="Resurse/JavaScript/Word_count.js"></script>
+        <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_Title_animation.css"/>
+        <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_menu.css"/>
+        <link rel="icon" href="Resurse/Imagini/japan.png" type="image/gif"/>
+        <script src="Resurse/JavaScript/New_menu.js"></script>
+        <title> Angela Hondru </title>
+    </head>
+    <body class="container">
+        <%- include("../fragmente/header")  %>
+        <main>
+            <div class="afisaj">
+                <h1>Inregistrare utilizator</h1>
+                <p>Completati formularul pentru noul profesor:<br/>
+                    <img src="http://irinaciocan.ro/imagini/nenea_html.png" alt="Ionel"/>
+                </p>
+                <% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+                <form method="post" action="/inreg" class="date"> <!-- daca nu pun action atunci actionul default este pagina curenta -->
+                    <p>
+                        <label>
+                            Username: <input type="text" name="username" value="prof123">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Nume: <input type="text" name="nume" value="Sever Examenescu">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Materii(separate cu virgula): <input type="text" name="materii" value="tehnici web, inteligenta artificiala" size="50">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Parola: <input type="password" name="parola" value="">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Reintroduceti parola: <input type="password" name="rparola" value="">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Email: <input type="text" name="email" value="profprofprof007@gmail.com"  size="50">
+                        </label>
+                    </p>
+                    <label>Cunosc Japoneza
+                    <input id="cunosc" name="Cunosc" value="Japo_da" type="checkbox"/>
+                    </label>
+                    <p>		
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+                <% } else if(rsstatus=="ok"){ %>
+                <p>Date introduse</p>
+                <% } else {%>
+                <p>Eroare</p>
+                <% } %>
+            </div>
+        </main>
+        <%- include("../fragmente/footer")  %>
+    </body>
+</html>

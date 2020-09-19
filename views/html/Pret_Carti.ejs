@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Stoicescu Adrian">
+    <meta name="description" content="Site Angela Hondru">
+    <meta name="keywords" content="Angela, Hondru, Japonia, Centrul de Studii Romano-Japoneze,Centru, Studii, Romano-Japoneze">
+    <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style.css"/>
+    <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_animated_galery.css"/>
+    <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_Title_animation.css"/>
+    <script src="Resurse/JavaScript/Title_animation.js"></script> 
+    <link rel="stylesheet" type="text/css" href="Resurse/CSS/Style_menu.css"/>
+    <link rel="icon" href="Resurse/Imagini/japan.png" type="image/gif"/>
+    <script src="Resurse/JavaScript/New_menu.js"></script>
+    <title> Angela Hondru </title>
+	<!-- pentru afisarea ca template am downloadat ejs.min.js de la https://github.com/mde/ejs/releases/tag/v3.0.2 -->
+	<script src="Resurse/JavaScript/ejs.min.js"></script>
+	<script src="Resurse/JavaScript/script.js"></script>
+</head>
+<body class="container" id="box">
+
+<%- include("../fragmente/header")  %>
+    
+<button id="Sortare">Sortare</button>
+    <input type="radio" name="Sort" value="asc" checked> Ascendenta
+    <input type="radio" name="Sort" value="desc"> Descendenta
+    <br>
+    <button id="Eliminare">Eliminare</button>
+    Introduceti un pret minim:
+    <input type="number" id="Pret_min"/><br>
+    <button id="Resetare">Resetare</button>
+    <br>
+    <!--
+    Data nasterii:<input type="text" id="Age"></input><button id="Age_b">Afla Varsta</button>
+    <div id="age_out"></div>
+    <br>
+-->
+<main>
+    
+    <!--<h1>JSON</h1>
+    <p>Continut JSON</p>
+		<div class="afis" id="afisJson">
+    </div>
+    
+    <p>Cu template:</p>
+	-->	
+		<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+		<div class="afis" id="afisTemplate"></div>
+</main>
+
+</body>
+</html>  

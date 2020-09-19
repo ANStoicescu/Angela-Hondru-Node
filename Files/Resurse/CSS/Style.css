@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-size: 105%;
+}
+h1 {
+    color: #62aaa7;
+    font-size: 200%;
+}
+h1:hover{
+    text-shadow: 2px 2px #FF0000;
+}
+body {
+    background-image: url("../Imagini/Background.png");
+}
+header {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.middle {
+    text-indent: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+.middle > h2 {
+    color: #45A29F;
+    font-size: 250%;
+    font-weight: bold;
+}
+.middle > h3 {
+    padding-top: 20px;
+    color: #45A29F;
+    font-size: 150%;
+    font-weight: bold;
+}
+@media screen and (max-width:560px)
+{
+    iframe{
+        height:auto;
+        width:auto;
+    }
+
+}
+@media screen and (max-width:951px) {
+    .middle {
+        text-indent: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+@media screen and (min-width:1036px) {
+    .middle article {
+        width: 50%;
+        float: left;
+    }
+}
+article > h3 {
+    color: #45A29F;
+    font-size: 150%;
+    font-weight: bold;
+}
+/*---------------navbar-------------*/
+.navbar {
+    overflow: hidden;
+    background-color: #363636;
+    font-family: Arial;
+}
+.navbar a {
+    float: left;
+    font-size: 24px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: #f9f9f9;
+    padding: 18px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #B32920;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #484848;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding-left: 12px;
+}
+.dropdown-content a {
+    float: none;
+    font-size: 20px;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #b82b21;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*---------------tabel-------------*/
+@media screen and (max-width:426px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display:none;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    td:not(:last-child):nth-of-type(1):before {
+        content: "Ziua";
+    }
+    td:last-child:nth-of-type(1):before {
+        content: "Caz special";
+    }
+    td:nth-of-type(2):before {
+        content: "Ora";
+    }
+}
+@media screen and (min-width:426px) {
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    td:empty {
+        padding: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        empty-cells: show;
+    }
+}
+
+/*---------------Pret_Carti-------------*/
+.afis{
+	border:2px solid #62aaa7;
+	padding:0.7em;
+}
+
+.templ_student{
+	border:1px solid black;
+	padding:0.4em;
+}
+
+.selectat{
+    background: lightblue;
+}
